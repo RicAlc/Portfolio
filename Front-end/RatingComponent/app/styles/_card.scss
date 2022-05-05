@@ -1,0 +1,150 @@
+@use "colors";
+.overview {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    background-color: var(--DarkBlue);
+    width: 87%;
+    min-width: 325px;
+    max-width: 41.2rem;
+    height: 360px;
+    border-radius: 1.5rem;
+    padding: 2.4rem;
+    .card-st1 {
+      .star {
+        background-color: var(--MediumGrey);
+        width: 1.5rem;
+        height: 35px;
+        border-radius: 50%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .star-icon {
+          width: 1.5rem;
+        }
+      }
+
+      .card-title {
+        font-size: 2.4rem;
+        color: var(--White);
+        font-family: "Overpass", sans-serif;
+        margin-top: 2rem;
+      }
+
+      .card-desc {
+        color: var(--LightGrey);
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-top: 1.3rem;
+      }
+
+      .rating-scale {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        .rating-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 4.2rem;
+          width: 4.2rem;
+          border-radius: 50%;
+          font-size: 1.4rem;
+          font-family: "Overpass", sans-serif;
+          background-color: var(--MediumGrey);
+          color: var(--LightGrey);
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--Orange);
+            color: var(--White);
+            transition: all 0.6s ease;
+          }
+        }
+        .active {
+          background-color: var(--LightGrey);
+          color: var(--White);
+        }
+      }
+
+      .submit-btn {
+        padding: 1.4rem;
+        margin-top: 2.4rem;
+        width: 100%;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Orange);
+        color: var(--White);
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--White);
+          color: var(--Orange);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+    .card-st2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 14.5rem;
+        margin-top: 1rem;
+      }
+
+      .usr-score {
+        display: flex;
+        align-items: center;
+        word-spacing: 0.2rem;
+        padding: 0.8rem 1rem;
+        width: fit-content;
+        background-color: var(--MediumGrey);
+        margin: 2rem auto 0;
+        border-radius: 20px;
+        color: var(--Orange);
+        font-size: 1.4rem;
+      }
+      h1 {
+        text-align: center;
+        font: 400;
+        font-size: 2.4rem;
+        color: var(--White);
+        margin-top: 2.5rem;
+      }
+      p {
+        text-align: center;
+        color: var(--LightGrey);
+        font-size: 1.4rem;
+        margin-top: 1.3rem;
+        line-height: 2.1rem;
+      }
+    }
+    .hide {
+      display: none;
+    }
+  }
+  .attribution {
+    margin-top: 30rem;
+    font-size: 1.5rem;
+    color: var(--LightGrey);
+    a {
+      color: var(--Orange);
+      &:hover {
+        transition: all 0.3s ease;
+        color: var(--White);
+      }
+    }
+  }
+}
