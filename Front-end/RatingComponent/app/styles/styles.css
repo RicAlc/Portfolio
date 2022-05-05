@@ -3,7 +3,7 @@
   --White: hsl(0, 0%, 100%);
   --LightGrey: hsl(217, 12%, 63%);
   --MediumGrey: hsl(216, 12%, 54%, 0.1);
-  --DarkBlue: hsl(213, 19%, 18%);
+  --DarkBlue: hsla(213, 20%, 18%, 0.75);
   --VeryDarkBlue: hsl(216, 12%, 8%);
 }
 
@@ -75,18 +75,18 @@ a:active {
   font-size: 2.4rem;
   color: var(--White);
   font-family: "Overpass", sans-serif;
-  margin-top: 2rem;
+  margin-top: 1.9rem;
 }
 .overview .card .card-st1 .card-desc {
   color: var(--LightGrey);
   font-size: 1.4rem;
-  line-height: 2rem;
-  margin-top: 1.3rem;
+  line-height: 2.27rem;
+  margin-top: 1.1rem;
 }
 .overview .card .card-st1 .rating-scale {
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 .overview .card .card-st1 .rating-scale .rating-btn {
   display: flex;
@@ -115,12 +115,12 @@ a:active {
   margin-top: 2.4rem;
   width: 100%;
   border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
   background-color: var(--Orange);
   color: var(--White);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   letter-spacing: 0.2rem;
 }
 .overview .card .card-st1 .submit-btn:hover {
@@ -170,7 +170,11 @@ a:active {
   display: none;
 }
 .overview .attribution {
-  margin-top: 30rem;
+  position: absolute;
+  top: 80%;
+  width: 25rem;
+  text-align: center;
+  margin-top: 5rem;
   font-size: 1.5rem;
   color: var(--LightGrey);
 }
@@ -189,7 +193,7 @@ a:active {
     border-radius: 3rem;
   }
   .overview .card .card-st1 .star {
-    padding: 2.5rem;
+    padding: 2.4rem;
   }
   .overview .card .card-st1 .star .star-icon {
     padding: 0rem;
@@ -198,7 +202,7 @@ a:active {
   .overview .card .card-st1 .card-title {
     font-weight: 700;
     font-size: 2.8rem;
-    margin-top: 3rem;
+    margin-top: 3.2rem;
   }
   .overview .card .card-st1 .card-desc {
     margin-top: 1rem;
@@ -206,7 +210,7 @@ a:active {
     font-size: 1.5rem;
   }
   .overview .card .card-st1 .rating-scale {
-    margin-top: 2.6rem;
+    margin-top: 2.65rem;
     width: 98%;
   }
   .overview .card .card-st1 .rating-scale .rating-btn {
@@ -215,8 +219,8 @@ a:active {
     font-size: 1.6rem;
   }
   .overview .card .card-st1 .submit-btn {
-    margin-top: 3.3rem;
-    padding: 1.3rem;
+    margin-top: 3.2rem;
+    padding: 1.4rem;
     width: 98%;
   }
   .overview .card .card-st2 img {
