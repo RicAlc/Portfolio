@@ -16,6 +16,8 @@
     border-radius: 1.5rem;
     padding: 2.4rem;
     .card-st1 {
+      opacity: 1;
+      transition: visibility 0.3s linear;
       .star {
         background-color: var(--MediumGrey);
         width: 1.5rem;
@@ -83,8 +85,8 @@
         text-align: center;
         background-color: var(--Orange);
         color: var(--White);
-        font-size: 1.35rem;
-        letter-spacing: 0.2rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.3rem;
 
         &:hover {
           cursor: pointer;
@@ -96,9 +98,10 @@
     }
     .card-st2 {
       display: flex;
+      visibility: visible;
       flex-direction: column;
       align-items: center;
-
+      transition: visibility 0.5s ease;
       img {
         width: 14.5rem;
         margin-top: 1rem;
@@ -132,7 +135,8 @@
       }
     }
     .hide {
-      display: none;
+      visibility: hidden;
+      transition: all 0s ease;
     }
   }
   .attribution {

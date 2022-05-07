@@ -13,10 +13,16 @@ user_score.forEach((element) => {
   });
 });
 
+if (document.getElementById("st1").classList.contains(".hide")) {
+  console.log("it is hide");
+}
+
 function submit() {
   if (rting > 0) {
     const st1 = document.getElementById("st1");
     const st2 = document.getElementById("st2");
+    document.querySelector(".hide").style.cssText =
+      "transform:translate(0, -100%)";
     console.log("Submitted");
     st1.classList.add("hide");
     st2.classList.remove("hide");
