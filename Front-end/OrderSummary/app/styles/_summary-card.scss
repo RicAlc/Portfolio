@@ -1,0 +1,157 @@
+body {
+  background-image: url("../../assets/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--Pale-blue);
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .summary-card {
+    background-color: #ffffff;
+    width: 32.7rem;
+    height: 56.7rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 45px -15px hsla(245, 75%, 52%, 0.3);
+    transition: all 0.15s linear;
+
+    img {
+      width: 100%;
+    }
+    .summary-card-content {
+      background-color: #ffffff;
+      width: 28rem;
+      height: 34.2rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        color: var(--Dark-blue);
+        font-size: 2.2rem;
+        font-weight: 900;
+        margin-bottom: 1.7rem;
+      }
+      p {
+        width: 90%;
+        color: var(--Desaturated-blue);
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2.5rem;
+        margin-bottom: 2.2rem;
+      }
+      .plan {
+        background-color: var(--Very-pale-blue);
+        height: 8.1rem;
+        width: 100%;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+
+        .music-icon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 0 1.6rem;
+          img {
+            width: 4.8rem;
+            height: 4.8rem;
+          }
+        }
+        .plan-selected {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          font-size: 1.4rem;
+          margin-left: 0.5rem;
+
+          .plan-name {
+            color: var(--Dark-blue);
+            font-weight: 900;
+            margin-top: 2.3rem;
+          }
+          .plan-cost {
+            color: var(--Desaturated-blue);
+            font-weight: 400;
+            margin-top: 0.3rem;
+          }
+        }
+        a {
+          color: var(--Bright-blue);
+          text-decoration: underline;
+          font-size: 1.3rem;
+          font-weight: 700;
+          margin: auto 1.7rem;
+
+          &:hover {
+            color: var(--Bright-pale-blue);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 3s ease;
+          }
+          &:visited {
+            color: var(--Bright-blue);
+          }
+        }
+      }
+      .payment-btn {
+        background-color: var(--Bright-blue);
+        width: 100%;
+        height: 5rem;
+        border: 0;
+        border-radius: 1rem;
+        color: #ffffff;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        box-shadow: 0 10px 30px -3px hsla(245, 75%, 52%, 0.3);
+        margin-bottom: 2.3rem;
+
+        &:hover {
+          background-color: var(--Bright-pale-blue);
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+      }
+      a {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: var(--Desaturated-blue);
+
+        &:hover {
+          color: var(--Dark-blue);
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+  }
+  .attribution {
+    position: absolute;
+    top: 90%;
+    font-size: 14px;
+    text-align: center;
+    width: 230px;
+    a {
+      font-weight: 700;
+      color: var(--Bright-blue);
+
+      &:hover {
+        color: var(--Desaturated-blue);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
