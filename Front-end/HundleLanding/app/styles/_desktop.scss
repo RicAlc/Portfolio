@@ -1,0 +1,73 @@
+body {
+  background-image: url("../../assets/bg-desktop.svg");
+  background-repeat: no-repeat;
+}
+header {
+  img {
+    width: 21.5rem;
+    margin: 5.4rem 7rem 0;
+  }
+}
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .content {
+    display: flex;
+    width: 90%;
+    margin-top: 6rem;
+    color: #ffffff;
+    .illustration {
+      width: 56%;
+      margin-right: 3%;
+      img {
+        width: 98%;
+      }
+    }
+    .info {
+      width: 40%;
+      h1 {
+        margin-top: 4.4rem;
+        font-size: 3.9rem;
+      }
+      p {
+        margin-top: 1.9rem;
+        line-height: 2.8rem;
+        font-size: 1.8rem;
+      }
+      .register-btn {
+        width: 20rem;
+        border-radius: 3rem;
+        font-family: "Poppins", sans-serif;
+        height: 5.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        color: var(--Violet);
+        font-size: 1.8rem;
+        margin-top: 2.3rem;
+        box-shadow: 5px 5px 20px -1px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          background-color: var(--SoftMagenta);
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+footer {
+  .socialmedia {
+    display: flex;
+    list-style-type: none;
+    .icons {
+      img {
+        background-color: #ffffff;
+      }
+    }
+  }
+}

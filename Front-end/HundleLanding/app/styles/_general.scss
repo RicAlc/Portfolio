@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Violet);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
