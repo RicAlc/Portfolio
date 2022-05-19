@@ -56,7 +56,7 @@ main {
 main .content {
   display: flex;
   width: 90%;
-  margin-top: 6rem;
+  margin-top: 8.3rem;
   color: #ffffff;
 }
 main .content .illustration {
@@ -100,8 +100,30 @@ main .content .info .register-btn:hover {
 
 footer .socialmedia {
   display: flex;
+  justify-content: flex-end;
   list-style-type: none;
+  margin-top: 1.6rem;
+  padding: 0 7.5rem;
 }
-footer .socialmedia .icons img {
-  background-color: #ffffff;
+footer .socialmedia li {
+  border: 1.5px solid #ffffff;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.8rem;
+}
+footer .socialmedia li .icon {
+  fill: #ffffff;
+  margin: 0.9rem;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+footer .socialmedia li:hover {
+  border: 1px solid var(--SoftMagenta);
+  cursor: pointer;
+}
+footer .socialmedia li:hover .icon {
+  fill: var(--SoftMagenta);
 }/*# sourceMappingURL=styles.css.map */
