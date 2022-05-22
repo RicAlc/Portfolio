@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--Dark-cyan);
+  background-image: url("../../assets/bg-pattern-top.svg"), url("../../assets/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Dark-blue: hsl(229, 23%, 23%);
+  --Grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 80vh;
+  z-index: 50;
+}
+
+main {
+  z-index: 500;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .card {
+  width: 35rem;
+  height: 37.4rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+main .card .profile-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .card .profile-info img {
+  position: absolute;
+  top: -56px;
+  border-radius: 20rem;
+  border: solid 0.5rem #ffffff;
+}
+main .card .profile-info h1 {
+  color: var(--Dark-blue);
+  margin-top: 6.9rem;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+main .card .profile-info h1 .age {
+  color: var(--Grayish-blue);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-left: 0.4rem;
+}
+main .card .profile-info span {
+  color: var(--Grayish-blue);
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+}
+main .card hr {
+  margin-top: 2.4rem;
+  opacity: 0.3;
+}
+main .card .account-stats {
+  display: flex;
+  width: 100%;
+  transform: translate(-0.4rem, 0);
+  justify-content: space-evenly;
+}
+main .card .account-stats .stat {
+  margin-top: 2.3rem;
+  text-align: center;
+}
+main .card .account-stats .stat .stat-qty {
+  color: var(--Dark-blue);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+main .card .account-stats .stat .stat-name {
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  color: var(--Dark-gray);
+}/*# sourceMappingURL=styles.css.map */

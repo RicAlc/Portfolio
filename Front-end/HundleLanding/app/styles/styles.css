@@ -121,7 +121,7 @@ footer .socialmedia li .icon {
   width: 1.8rem;
 }
 footer .socialmedia li:hover {
-  border: 1px solid var(--SoftMagenta);
+  border: 1.5px solid var(--SoftMagenta);
   cursor: pointer;
 }
 footer .socialmedia li:hover .icon {
