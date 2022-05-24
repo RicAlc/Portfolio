@@ -40,15 +40,26 @@ a:active {
 body {
   background-image: url("../../assets/bg-desktop.svg");
   background-repeat: no-repeat;
+  background-size: auto;
 }
 
+header {
+  margin: 0 auto;
+  max-width: 144rem;
+  text-align: left;
+}
 header img {
   width: 21.5rem;
   margin: 5.4rem 7rem 0;
 }
+header img:hover {
+  cursor: pointer;
+}
 
 main {
+  margin: 0 auto;
   width: 100vw;
+  max-width: 144rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,14 +107,18 @@ main .content .info .register-btn:hover {
   background-color: var(--SoftMagenta);
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+footer {
+  max-width: 136.8rem;
+  margin: 0 auto;
+}
 footer .socialmedia {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
   margin-top: 1.6rem;
-  padding: 0 7.5rem;
 }
 footer .socialmedia li {
   border: 1.5px solid #ffffff;
@@ -117,13 +132,74 @@ footer .socialmedia li {
 footer .socialmedia li .icon {
   fill: #ffffff;
   margin: 0.9rem;
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 1.9rem;
+  width: 1.9rem;
 }
 footer .socialmedia li:hover {
   border: 1.5px solid var(--SoftMagenta);
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 footer .socialmedia li:hover .icon {
   fill: var(--SoftMagenta);
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-image: url("../../assets/bg-mobile.svg");
+    background-size: contain;
+  }
+
+  header img {
+    width: 12.9rem;
+    margin: 3.2rem 3.4rem;
+  }
+
+  main .content {
+    margin-top: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .content .illustration {
+    margin: 0 auto;
+    width: 30.8rem;
+  }
+  main .content .info {
+    width: 80vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .content .info h1 {
+    margin-top: 5.7rem;
+    font-size: 2.4rem;
+  }
+  main .content .info p {
+    margin-top: 1.5rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+  }
+  main .content .info .register-btn {
+    margin-top: 2.4rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.3);
+  }
+
+  footer {
+    margin-top: 6.5rem;
+  }
+  footer .socialmedia {
+    justify-content: center;
+  }
+  footer .socialmedia li {
+    margin: 0 0.6rem;
+  }
+  footer .socialmedia li .icon {
+    margin: 0.5rem;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

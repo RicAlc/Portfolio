@@ -19,7 +19,7 @@ body {
   background-color: var(--Dark-cyan);
   background-image: url("../../assets/bg-pattern-top.svg"), url("../../assets/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
 }
 
 h1,
@@ -41,15 +41,18 @@ a:active {
   --Dark-gray: hsl(0, 0%, 59%);
 }
 
-.bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 80vw;
-  height: 80vh;
-  z-index: 50;
-}
+@media screen and (max-width: 500px) {
+  html {
+    min-width: 350px;
+  }
 
+  body {
+    background-position: right 34vw bottom 50vh, left 40vw top 45vh;
+  }
+  body main .card {
+    width: 32.6rem;
+  }
+}
 main {
   z-index: 500;
   width: 100vw;
@@ -63,9 +66,9 @@ main .card {
   width: 35rem;
   height: 37.4rem;
   background-color: #ffffff;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px 10px;
 }
 main .card .profile-info {
   position: relative;

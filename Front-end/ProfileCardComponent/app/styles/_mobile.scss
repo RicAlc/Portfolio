@@ -1,0 +1,13 @@
+@media screen and (max-width: 500px) {
+  html {
+    min-width: 350px;
+  }
+  body {
+    background-position: right 34vw bottom 50vh, left 40vw top 45vh;
+    main {
+      .card {
+        width: 32.6rem;
+      }
+    }
+  }
+}
