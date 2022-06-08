@@ -1,0 +1,74 @@
+@use "../util" as u;
+@media screen and (max-width: 1000px) {
+  main {
+    width: 100vw;
+  }
+  .grid {
+    display: flex;
+    transform: translate(0, 345px);
+    flex-direction: column;
+    align-items: center;
+    max-width: u.rem(500);
+    min-width: u.rem(250);
+  }
+  .dashboard {
+    width: 87vw;
+    .user {
+      width: 100%;
+      .user-info {
+        padding: u.rem(30) u.rem(15);
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: u.rem(133);
+        #pfp {
+          width: u.rem(70);
+        }
+        p {
+          margin-top: 0;
+          span {
+            display: block;
+            font-weight: 300;
+            font-size: u.rem(24);
+          }
+        }
+      }
+      .views-container {
+        width: 100%;
+        height: u.rem(86);
+        .view-modes {
+          display: flex;
+          padding-top: u.rem(30);
+          margin: 0;
+          justify-content: space-around;
+        }
+      }
+    }
+    .activity {
+      width: 100%;
+      .icon {
+        width: 100%;
+        height: u.rem(72);
+      }
+      .activity-desc {
+        width: 100%;
+        display: block;
+        padding: 2rem 1.5rem;
+        height: u.rem(122);
+        text-align: justify;
+        .hours {
+          display: inline;
+          width: 40%;
+          font-size: u.rem(32);
+        }
+        .hours-last {
+          display: inline-block;
+          text-align: right;
+          font-size: u.rem(15);
+          width: 60%;
+        }
+      }
+    }
+  }
+}

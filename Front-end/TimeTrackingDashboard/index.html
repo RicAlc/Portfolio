@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Time tracking dashboard</title>
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Rubik:wght@300;400;500&display=swap"
+		rel="stylesheet">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="./dist/styles.css">
+</head>
+
+<body>
+	<main>
+		<div class="dashboard grid">
+			<div class="user">
+				<div class="user-info">
+					<img src="./assets/image-jeremy.png" alt="Foto del usuario" id="pfp">
+					<p>Report for <span>Jeremy Robson</span></p>
+				</div>
+				<div class="views-container">
+					<div class="view-modes">
+						<div class="view-mode" id="daily">Daily</div>
+						<div class="view-mode active" id="weekly">Weekly</div>
+						<div class="view-mode" id="monthly">Monthly</div>
+					</div>
+				</div>
+			</div>
+			<div class="activity">
+				<div class="icon work">
+					<img src="./assets/icon-work.svg" alt="icono de actividad">
+				</div>
+				<div class="activity-desc">
+					<div class="activity-options">
+						<h2>Work</h2>
+						<div class="more-btn">&bull;&bull;&bull;</div>
+					</div>
+					<div class="hours" id="workPresent">00hrs</div>
+					<div class="hours-last">Last <span id="workLast"> - 00hrs</span></div>
+				</div>
+			</div>
+			<div class="activity">
+				<div class="icon play">
+					<img src="./assets/icon-play.svg" alt="icono de actividad">
+				</div>
+				<div class="activity-desc">
+					<div class="activity-options">
+						<h2>Play</h2>
+						<div class="more-btn">&bull;&bull;&bull;</div>
+					</div>
+					<div class="hours" id="playPresent">00hrs</div>
+					<div class="hours-last">Last <span id="playLast"> - 00hrs</span></div>
+				</div>
+			</div>
+			<div class="activity">
+				<div class="icon study">
+					<img src="./assets/icon-study.svg" alt="icono de actividad">
+				</div>
+				<div class="activity-desc">
+					<div class="activity-options">
+						<h2>Study</h2>
+						<div class="more-btn">&bull;&bull;&bull;</div>
+					</div>
+					<div class="hours" id="studyPresent">00hrs</div>
+					<div class="hours-last">Last <span id="studyLast"> - 00hrs</span></div>
+				</div>
+			</div>
+			<div class="activity">
+				<div class="icon exercise">
+					<img src="./assets/icon-exercise.svg" alt="icono de actividad">
+				</div>
+				<div class="activity-desc">
+					<div class="activity-options">
+						<h2>Exercise</h2>
+						<div class="more-btn">&bull;&bull;&bull;</div>
+					</div>
+					<div class="hours" id="exercisePresent">00hrs</div>
+					<div class="hours-last">Last <span id="exerciseLast"> - 00hrs</span></div>
+				</div>
+			</div>
+			<div class="activity">
+				<div class="icon social">
+					<img src="./assets/icon-social.svg" alt="icono de actividad">
+				</div>
+				<div class="activity-desc">
+					<div class="activity-options">
+						<h2>Social</h2>
+						<div class="more-btn">&bull;&bull;&bull;</div>
+					</div>
+					<div class="hours" id="socialPresent">00hrs</div>
+					<div class="hours-last">Last <span id="socialLast"> - 00hrs</span></div>
+				</div>
+			</div>
+			<div class="activity">
+				<div class="icon selfc">
+					<img src="./assets/icon-self-care.svg" alt="icono de actividad">
+				</div>
+				<div class="activity-desc">
+					<div class="activity-options">
+						<h2>Self-care</h2>
+						<div class="more-btn">&bull;&bull;&bull;</div>
+					</div>
+					<div class="hours" id="selfcPresent">00hrs</div>
+					<div class="hours-last">Last <span id="selfcLast"> - 00hrs</span></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="./app/js/data.js"></script>
+	<script src="./app/js/script.js"></script>
+</body>
+
+</html>
