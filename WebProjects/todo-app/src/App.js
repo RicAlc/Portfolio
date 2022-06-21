@@ -1,13 +1,7 @@
-import Header from "./components/Header";
-import NewTodo from "./components/NewTodo";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <NewTodo />
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
