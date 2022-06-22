@@ -1,0 +1,12 @@
+@use "../utils/" as u;
+.header {
+  color: var(--White);
+  margin-top: 10vh;
+  display: flex;
+  width: u.rem(540);
+  justify-content: space-between;
+  h1 {
+    font-size: u.rem(40);
+    letter-spacing: 1rem;
+  }
+}

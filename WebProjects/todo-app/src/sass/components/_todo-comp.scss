@@ -1,0 +1,33 @@
+@use "../utils/" as u;
+.todo-comp {
+  background-color: var(--Dt-todos);
+  margin: u.rem(20);
+  width: u.rem(540);
+  color: var(--Dt-text);
+  border-radius: 5px;
+  box-shadow: var(--Boxshadow) 0px 5px 15px;
+  .todo {
+    display: flex;
+    padding: 1.5rem 2rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: var(--Footer-text);
+    .filters {
+      display: flex;
+      &__option {
+        padding-inline: u.rem(6);
+        &:hover {
+          color: var(--Dt-text-hover);
+          cursor: pointer;
+        }
+      }
+      .active {
+        color: var(--Active);
+      }
+    }
+  }
+}

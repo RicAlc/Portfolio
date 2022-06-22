@@ -1,0 +1,19 @@
+:root {
+  --White: #fff;
+
+  // light theme
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --VeryLightGrayishBlue: hsl(236, 33%, 92%);
+  --LightGrayishBlue: hsl(233, 11%, 84%);
+  --DarkGrayishBlue: hsl(236, 9%, 61%);
+  --VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+  --Active: hsl(222, 80%, 57%);
+  // dark theme
+  --Dt-bg: hsl(235, 21%, 11%);
+  --Dt-todos: hsl(235, 24%, 19%);
+  --Dt-text: hsl(234, 39%, 85%);
+  --Dt-text-hover: hsl(236, 33%, 92%);
+  --Footer-text: hsl(234, 11%, 52%);
+  --Completed: hsl(233, 14%, 35%);
+  --Boxshadow: hsla(240, 4%, 11%, 0.835);
+}

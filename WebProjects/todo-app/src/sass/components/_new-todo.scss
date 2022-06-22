@@ -1,0 +1,22 @@
+@use "../utils/" as u;
+.new-todo {
+  background-color: var(--Dt-todos);
+  color: var(--Dt-text);
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--Boxshadow) 0px 5px 15px;
+  width: u.rem(540);
+  margin: 2.4rem 0 0.3rem;
+  input {
+    font-family: inherit;
+    background-color: var(--Dt-todos);
+    color: var(--Dt-text);
+    border: none;
+    font-size: u.rem(20);
+    padding: u.rem(5);
+    caret-color: var(--Active);
+    outline: none;
+  }
+}
