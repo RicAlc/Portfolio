@@ -8,9 +8,61 @@
   box-shadow: var(--Boxshadow) 0px 5px 15px;
   .todo {
     display: flex;
-    padding: 1.5rem 2rem;
+    padding: 1.2rem 1.5rem;
+    &:hover .del-btn,
+    &__desc {
+      cursor: pointer;
+    }
+    &:hover .del-btn {
+      display: block;
+    }
+    &__checkbox {
+      background: linear-gradient(var(--Dt-todos), var(--Dt-todos)) padding-box,
+        var(--Completed) border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: u.rem(25);
+      height: u.rem(25);
+      border-radius: 5rem;
+      border-radius: 5rem;
+      border: 2px solid transparent;
+      margin-right: u.rem(25);
+      &:hover {
+        cursor: pointer;
+        background: linear-gradient(var(--Dt-todos), var(--Dt-todos))
+            padding-box,
+          linear-gradient(to left, var(--Grad-purple), var(--Grad-blue))
+            border-box;
+      }
+    }
+    &__desc {
+      font-size: u.rem(18);
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+    .del-btn {
+      display: none;
+    }
   }
 
+  .completed {
+    .todo__checkbox {
+      background: linear-gradient(
+            to right,
+            var(--Grad-purple),
+            var(--Grad-blue)
+          )
+          padding-box,
+        linear-gradient(to right, var(--Grad-purple), var(--Grad-blue))
+          border-box;
+    }
+    .todo__desc {
+      color: var(--Completed);
+      text-decoration: line-through;
+    }
+  }
   &__footer {
     display: flex;
     justify-content: space-between;

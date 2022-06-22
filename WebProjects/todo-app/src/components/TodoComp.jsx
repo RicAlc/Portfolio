@@ -4,10 +4,10 @@ import TodoListFooter from "./TodoListFooter";
 function TodoComp() {
   return (
     <div className="todo-comp">
+      <Todo status="completed" />
       <Todo />
       <Todo />
-      <Todo />
-      <Todo />
+      <Todo status="completed" />
       <Todo />
       <Todo />
       <TodoListFooter />

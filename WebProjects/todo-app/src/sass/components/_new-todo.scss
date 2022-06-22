@@ -2,19 +2,29 @@
 .new-todo {
   background-color: var(--Dt-todos);
   color: var(--Dt-text);
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 5px;
   display: flex;
   align-items: center;
   box-shadow: var(--Boxshadow) 0px 5px 15px;
   width: u.rem(540);
-  margin: 2.4rem 0 0.3rem;
+  margin: 2.4rem 0 0.4rem;
+  .circle {
+    background: linear-gradient(var(--Dt-todos), var(--Dt-todos)) padding-box,
+      var(--Completed) border-box;
+    width: u.rem(25);
+    height: u.rem(25);
+    border-radius: 5rem;
+    border-radius: 5rem;
+    border: 2px solid transparent;
+    margin-right: u.rem(18);
+  }
   input {
     font-family: inherit;
     background-color: var(--Dt-todos);
     color: var(--Dt-text);
     border: none;
-    font-size: u.rem(20);
+    font-size: u.rem(18);
     padding: u.rem(5);
     caret-color: var(--Active);
     outline: none;
