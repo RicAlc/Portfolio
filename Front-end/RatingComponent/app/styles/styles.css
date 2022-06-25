@@ -173,8 +173,13 @@ a:active {
   line-height: 2.1rem;
 }
 .overview .card .hide {
-  visibility: hidden;
-  transition: all 0s ease;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 0.25s ease-in;
 }
 .overview .attribution {
   position: absolute;

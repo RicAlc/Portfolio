@@ -1,4 +1,3 @@
-@use "colors";
 .overview {
   height: 100vh;
   width: 100vw;
@@ -135,8 +134,10 @@
       }
     }
     .hide {
-      visibility: hidden;
-      transition: all 0s ease;
+      opacity: 0;
+      overflow: hidden;
+      user-select: none;
+      transition: all 0.25s ease-in;
     }
   }
   .attribution {
