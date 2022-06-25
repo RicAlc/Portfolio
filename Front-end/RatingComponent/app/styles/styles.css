@@ -58,10 +58,6 @@ a:active {
   border-radius: 1.5rem;
   padding: 2.4rem;
 }
-.overview .card .card-st1 {
-  opacity: 1;
-  transition: visibility 0.3s linear;
-}
 .overview .card .card-st1 .star {
   background-color: var(--MediumGrey);
   width: 1.5rem;
@@ -135,10 +131,8 @@ a:active {
 }
 .overview .card .card-st2 {
   display: flex;
-  visibility: visible;
   flex-direction: column;
   align-items: center;
-  transition: visibility 0.5s ease;
 }
 .overview .card .card-st2 img {
   width: 14.5rem;
@@ -173,13 +167,7 @@ a:active {
   line-height: 2.1rem;
 }
 .overview .card .hide {
-  opacity: 0;
-  overflow: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  transition: all 0.25s ease-in;
+  display: none;
 }
 .overview .attribution {
   position: absolute;
@@ -198,7 +186,7 @@ a:active {
   color: var(--White);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 900px) {
   .overview .card {
     padding: 3.2rem;
     height: 41.6rem;

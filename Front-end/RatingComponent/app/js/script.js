@@ -19,8 +19,8 @@ function submit() {
   if (!isNaN(rting)) {
     const st1 = document.getElementById("st1");
     const st2 = document.getElementById("st2");
-    document.querySelector(".hide").style.cssText =
-      "transform:translate(0, -100%)";
+    // document.querySelector(".hide").style.cssText =
+    //   "transform:translate(0, -100%)";
     console.log("Submitted");
     st1.classList.add("hide");
     setTimeout(() => {
