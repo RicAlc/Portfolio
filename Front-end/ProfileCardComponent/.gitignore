@@ -5,7 +5,7 @@
 *.sketch
 *.fig
 /design
-*.md
+
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
