@@ -40,7 +40,7 @@ a:active {
 body {
   background-image: url("../../assets/bg-desktop.svg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 header {
@@ -144,7 +144,7 @@ footer .socialmedia li:hover .icon {
   fill: var(--SoftMagenta);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   body {
     background-image: url("../../assets/bg-mobile.svg");
     background-size: contain;
