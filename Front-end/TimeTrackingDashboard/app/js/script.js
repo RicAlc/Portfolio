@@ -1,5 +1,3 @@
-console.log("linked :)");
-
 const work_pr = document.getElementById("workPresent");
 const work_ls = document.getElementById("workLast");
 const play_pr = document.getElementById("playPresent");
@@ -19,7 +17,6 @@ update(mode);
 
 viewMode.forEach((element) => {
   element.addEventListener("click", function x() {
-    console.log("its been clicked");
     for (let i = 0; i < viewMode.length; i++) {
       viewMode[i].classList.remove("active");
     }
@@ -30,7 +27,7 @@ viewMode.forEach((element) => {
 });
 
 function update(mode) {
-  console.log("update");
+  console.log("updated");
   let hours = [];
   switch (mode) {
     case "monthly":
