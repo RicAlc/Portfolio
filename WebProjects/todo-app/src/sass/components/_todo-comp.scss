@@ -1,11 +1,19 @@
 @use "../utils/" as u;
+@forward "todo-footer";
 .todo-comp {
   background-color: var(--Dt-todos);
   margin: u.rem(20);
   width: u.rem(540);
   color: var(--Dt-text);
   border-radius: 5px;
-  box-shadow: var(--Boxshadow) 0px 5px 15px;
+  box-shadow: var(--Boxshadow) 0px 25px 25px;
+  .no-items {
+    color: var(--Dt-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2rem;
+  }
   .todo {
     display: flex;
     padding: 1.2rem 1.5rem;
@@ -46,7 +54,6 @@
       display: none;
     }
   }
-
   .completed {
     .todo__checkbox {
       background: linear-gradient(
@@ -61,25 +68,6 @@
     .todo__desc {
       color: var(--Completed);
       text-decoration: line-through;
-    }
-  }
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    color: var(--Footer-text);
-    .filters {
-      display: flex;
-      &__option {
-        padding-inline: u.rem(6);
-        &:hover {
-          color: var(--Dt-text-hover);
-          cursor: pointer;
-        }
-      }
-      .active {
-        color: var(--Active);
-      }
     }
   }
 }

@@ -7,7 +7,7 @@ function TodoListFooter() {
         <div className="filters__option">Active</div>
         <div className="filters__option">Completed</div>
       </div>
-      <div className="clear">Clear Completed</div>
+      <div className="clear-btn">Clear completed</div>
     </div>
   );
 }

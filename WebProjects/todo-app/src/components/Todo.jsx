@@ -6,7 +6,7 @@ const Todo = (props) => (
     <div className="todo__checkbox">
       {props.status == "completed" ? <CheckIco /> : null}
     </div>
-    <div className="todo__desc">Ir a la tienda por tortillas</div>
+    <div className="todo__desc">{props.desc}</div>
     {props.status == "completed" ? <CrossIco /> : null}
   </div>
 );

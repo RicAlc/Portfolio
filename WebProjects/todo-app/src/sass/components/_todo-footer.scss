@@ -1,0 +1,25 @@
+@use "../utils/" as u;
+.todo-comp__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  font-size: u.rem(14);
+  color: var(--Footer-text);
+  .filters {
+    display: flex;
+    &__option {
+      padding-inline: u.rem(6);
+      &:hover {
+        color: var(--Dt-text-hover);
+        cursor: pointer;
+      }
+    }
+    .active {
+      color: var(--Active);
+    }
+  }
+  .clear-btn:hover {
+    cursor: pointer;
+    color: var(--Dt-text-hover);
+  }
+}
