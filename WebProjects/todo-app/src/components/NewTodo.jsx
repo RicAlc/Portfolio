@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 
-function NewTodo({ action }) {
+function NewTodo({ onSubmit }) {
   const [input, setInput] = useState("");
+  const [id, setId] = useState(1);
 
+  // Manejo dele evento subtmit del form donde creamos un objeto newTodo con los
+  // datos ingresados
   const handleSubmit = (e) => {
     e.preventDefault();
     const newTodo = {
-      id: 1,
-      texto: input,
+      id: id,
+      desc: input,
       status: false,
     };
+    setId(id + 1);
+    onSubmit(newTodo);
   };
+  // Actualiza el valor del input cada vez que el usuario escribe algo
   const handleChange = (e) => {
     setInput(e.target.value);
   };
