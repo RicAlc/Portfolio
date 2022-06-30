@@ -1,4 +1,4 @@
-@use "../utils/" as u;
+@use '../utils/' as u;
 .new-todo {
   background-color: var(--Dt-todos);
   color: var(--Dt-text);
@@ -8,13 +8,12 @@
   align-items: center;
   box-shadow: var(--Boxshadow) 0px 5px 15px;
   width: u.rem(540);
-  margin: 2.4rem 0 0.4rem;
+  margin-top: 2.4rem;
   .circle {
     background: linear-gradient(var(--Dt-todos), var(--Dt-todos)) padding-box,
       var(--Completed) border-box;
     width: u.rem(25);
     height: u.rem(25);
-    border-radius: 5rem;
     border-radius: 5rem;
     border: 2px solid transparent;
     margin-right: u.rem(18);
@@ -24,9 +23,26 @@
     background-color: var(--Dt-todos);
     color: var(--Dt-text);
     border: none;
+    width: 100%;
     font-size: u.rem(18);
     padding: u.rem(5);
     caret-color: var(--Active);
     outline: none;
+  }
+}
+@include u.breakpoint-down(small) {
+  .new-todo {
+    width: 85%;
+    min-width: 300px;
+    max-width: u.rem(540rem);
+    height: u.rem(46);
+    padding: 0.5rem 1.3rem;
+    .circle {
+      width: u.rem(20);
+      height: u.rem(20);
+    }
+    input {
+      font-size: u.rem(13);
+    }
   }
 }

@@ -1,4 +1,4 @@
-@use "../utils/" as u;
+@use '../utils/' as u;
 .header {
   color: var(--White);
   margin-top: 10vh;
@@ -11,5 +11,16 @@
   }
   svg:hover {
     cursor: pointer;
+  }
+}
+@include u.breakpoint-down(small) {
+  .header {
+    width: 87%;
+    max-width: u.rem(540);
+    margin-top: 6.5vh;
+    h1 {
+      font-size: u.rem(26);
+      letter-spacing: 0.7rem;
+    }
   }
 }
