@@ -1,4 +1,9 @@
-function TodoListFooter({ todos_left, activeFilter, changeFilter }) {
+function TodoListFooter({
+  todos_left,
+  activeFilter,
+  changeFilter,
+  clearCompleted,
+}) {
   return (
     <div className='todo-comp__footer'>
       {todos_left} tasks left
@@ -28,7 +33,9 @@ function TodoListFooter({ todos_left, activeFilter, changeFilter }) {
           Completed
         </div>
       </div>
-      <div className='clear-btn'>Clear completed</div>
+      <div className='clear-btn' onClick={() => clearCompleted()}>
+        Clear completed
+      </div>
     </div>
   );
 }

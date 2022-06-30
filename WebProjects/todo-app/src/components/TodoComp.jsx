@@ -64,7 +64,9 @@ function TodoComp() {
   };
 
   const clearCompleted = () => {
-    console.log('Clearing completed');
+    const updatedTodos = todos.filter((todo) => todo.status === false);
+    setTodos(updatedTodos);
+    setRendTodos(updatedTodos);
   };
 
   return (
