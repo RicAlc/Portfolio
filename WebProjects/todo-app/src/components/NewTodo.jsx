@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function NewTodo({ onSubmit }) {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState('');
   const [id, setId] = useState(1);
 
   // Manejo dele evento subtmit del form donde creamos un objeto newTodo con los
@@ -21,9 +21,9 @@ function NewTodo({ onSubmit }) {
     setInput(e.target.value);
   };
   return (
-    <form className="new-todo" onSubmit={handleSubmit}>
-      <div className="circle"></div>
-      <input type="text" placeholder="Drop tables..." onChange={handleChange} />
+    <form className='new-todo' onSubmit={handleSubmit}>
+      <div className='circle'></div>
+      <input type='text' placeholder='Drop tables...' onChange={handleChange} />
     </form>
   );
 }
