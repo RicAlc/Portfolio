@@ -3,7 +3,7 @@ import CrossIco from '../assets/icons/CrossIco';
 
 function Todo({ id, desc, status, deleteTodo, completeTodo }) {
   return (
-    <div id={id} className={`todo ${status ? 'completed' : ''}`}>
+    <div id={id} className={status ? 'todo completed' : 'todo'}>
       <div className='todo__checkbox' onClick={() => completeTodo(id)}>
         {status ? <CheckIco /> : null}
       </div>
