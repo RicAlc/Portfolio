@@ -13,6 +13,7 @@ function NewTodo({ onSubmit }) {
       desc: input,
       status: false,
     };
+    e.target.reset();
     setId(id + 1);
     onSubmit(newTodo);
   };

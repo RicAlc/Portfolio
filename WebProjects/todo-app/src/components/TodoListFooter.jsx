@@ -9,25 +9,31 @@ function TodoListFooter({
       {todos_left} tasks left
       <div className='filters'>
         <div
-          className={`filters__option ${
-            activeFilter == 'all' ? 'active' : null
-          }`}
+          className={
+            activeFilter === 'all'
+              ? ' filters__option active'
+              : 'filters__option'
+          }
           onClick={() => changeFilter('all')}
         >
           All
         </div>
         <div
-          className={`filters__option ${
-            activeFilter == 'active' ? 'active' : null
-          }`}
+          className={
+            activeFilter === 'active'
+              ? ' filters__option active'
+              : 'filters__option'
+          }
           onClick={() => changeFilter('active')}
         >
           Active
         </div>
         <div
-          className={`filters__option ${
-            activeFilter == 'completed' ? 'active' : null
-          }`}
+          className={
+            activeFilter === 'completed'
+              ? ' filters__option active'
+              : 'filters__option'
+          }
           onClick={() => changeFilter('completed')}
         >
           Completed

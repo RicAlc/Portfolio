@@ -1,7 +1,7 @@
 @use '../utils/' as u;
 .new-todo {
-  background-color: var(--Dt-todos);
-  color: var(--Dt-text);
+  background-color: var(--Todos);
+  color: var(--Text);
   padding: 1rem 1.5rem;
   border-radius: 5px;
   display: flex;
@@ -10,7 +10,7 @@
   width: u.rem(540);
   margin-top: 2.4rem;
   .circle {
-    background: linear-gradient(var(--Dt-todos), var(--Dt-todos)) padding-box,
+    background: linear-gradient(var(--Todos), var(--Todos)) padding-box,
       var(--Completed) border-box;
     width: u.rem(25);
     height: u.rem(25);
@@ -20,8 +20,8 @@
   }
   input {
     font-family: inherit;
-    background-color: var(--Dt-todos);
-    color: var(--Dt-text);
+    background-color: var(--Todos);
+    color: var(--Text);
     border: none;
     width: 100%;
     font-size: u.rem(18);
