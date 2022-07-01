@@ -34,7 +34,7 @@ function TodoComp() {
   //Complete function change todo status to !status
   const completeTodo = (id) => {
     const updatedTodos = todos.map((todo) => {
-      if (todo.id == id) {
+      if (todo.id === id) {
         todo.status = !todo.status;
       }
       return todo;
@@ -74,14 +74,17 @@ function TodoComp() {
       <NewTodo onSubmit={addTodo} />
       <div className='todo-comp'>
         {rendTodos.map((todo) => (
-          <Todo
-            key={todo.id}
-            id={todo.id}
-            status={todo.status}
-            desc={todo.desc}
-            deleteTodo={deleteTodo}
-            completeTodo={completeTodo}
-          />
+          <>
+            <Todo
+              key={todo.id}
+              id={todo.id}
+              status={todo.status}
+              desc={todo.desc}
+              deleteTodo={deleteTodo}
+              completeTodo={completeTodo}
+            />
+            <hr />
+          </>
         ))}
         <TodoListFooter
           changeFilter={changeFilter}

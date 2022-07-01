@@ -4,18 +4,20 @@
   --Grad-purple: hsl(280, 67%, 63%);
   --Grad-blue: hsl(188, 100%, 50%);
   // light theme
-  --VeryLightGray: hsl(0, 0%, 98%);
-  --VeryLightGrayishBlue: hsl(236, 33%, 92%);
-  --LightGrayishBlue: hsl(233, 11%, 84%);
-  --DarkGrayishBlue: hsl(236, 9%, 61%);
-  --VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+  --Todos: hsl(0, 0%, 98%);
+  --Body-bg: hsl(236, 33%, 92%);
+  --Completed: hsl(233, 11%, 84%);
+  --Footer-text: hsl(236, 9%, 61%);
+  --Text: hsl(235, 19%, 35%);
+  --Text-hover: hsl(235, 19%, 35%);
   --Active: hsl(222, 80%, 57%);
   // dark theme
-  --Dt-bg: hsl(235, 21%, 11%);
+  --Dt-body-bg: hsl(235, 21%, 11%);
   --Dt-todos: hsl(235, 24%, 19%);
   --Dt-text: hsl(234, 39%, 85%);
-  --Dt-text-hover: hsl(236, 33%, 92%);
-  --Footer-text: hsl(234, 11%, 52%);
-  --Completed: hsl(233, 14%, 35%);
-  --Boxshadow: hsl(240, 3%, 6%);
+  --Dt-textHover: hsl(236, 33%, 92%);
+  --Dt-footer-text: hsl(234, 11%, 52%);
+  --Dt-completed: hsl(233, 14%, 35%);
+  --Dt-boxshadow: hsl(240, 3%, 6%);
+  --Boxshadow: hsla(240, 3%, 6%, 0.101);
 }

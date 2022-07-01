@@ -1,14 +1,14 @@
 @use '../utils/' as u;
 @forward 'todo-footer';
 .todo-comp {
-  background-color: var(--Dt-todos);
+  background-color: var(--Todos);
   margin: u.rem(20);
   width: u.rem(540);
-  color: var(--Dt-text);
+  color: var(--Text);
   border-radius: 5px;
   box-shadow: var(--Boxshadow) 0px 25px 25px;
   .no-items {
-    color: var(--Dt-text);
+    color: var(--Text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
   }
   .todo {
     display: flex;
-    padding: 1.2rem 1.5rem;
+    padding: 1rem 1.5rem;
     min-height: u.rem(20);
     &:hover .del-btn,
     &__desc {
@@ -26,7 +26,7 @@
       visibility: visible;
     }
     &__checkbox {
-      background: linear-gradient(var(--Dt-todos), var(--Dt-todos)) padding-box,
+      background: linear-gradient(var(--Todos), var(--Todos)) padding-box,
         var(--Completed) border-box;
       display: flex;
       align-items: center;
@@ -40,8 +40,7 @@
       margin-right: u.rem(10);
       &:hover {
         cursor: pointer;
-        background: linear-gradient(var(--Dt-todos), var(--Dt-todos))
-            padding-box,
+        background: linear-gradient(var(--Todos), var(--Todos)) padding-box,
           linear-gradient(to left, var(--Grad-purple), var(--Grad-blue))
             border-box;
       }
@@ -51,6 +50,11 @@
       display: flex;
       align-items: center;
       margin-right: auto;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-all;
+
+      min-height: u.rem(15);
     }
     .del-btn {
       width: 20px;
@@ -73,6 +77,9 @@
       text-decoration: line-through;
     }
   }
+  hr {
+    border-color: rgba(199, 187, 194, 0.139);
+  }
 }
 @include u.breakpoint-down(small) {
   .todo-comp {
@@ -86,7 +93,6 @@
       }
       &__desc {
         font-size: u.rem(13);
-        white-space: normal;
       }
       .del-btn {
         visibility: visible;
